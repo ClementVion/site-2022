@@ -1,0 +1,7 @@
+@function ratio($multiplier: 1) {
+	@return ($baseSize * $multiplier);
+}
+// 375px - mobile portrait
+@function ratioM($multiplier: 1) {
+	@return ($mobilePBaseSize * $multiplier);
+}

@@ -1,0 +1,108 @@
+.Home {
+  padding: ratio(8) ratio(6);
+  display: flex;
+  position: relative;
+  @include mobileP {
+    display: block;
+    padding: ratioM(4) ratioM(2);
+  }
+}
+
+.Home__Left {
+  width: ratio(40);
+  position: sticky;
+  top: ratio(8);
+  height: ratio(10);
+  @include mobileP {
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: auto;
+  }
+}
+
+.Home__Title {
+  font-size: ratio(3.5);
+  font-weight: 500;
+  @include mobileP {
+    font-size: ratioM(2.33);
+  }
+}
+
+.Home__Job {
+  font-size: ratio(1.55);
+  @include mobileP {
+    font-size: ratioM(1);
+  }
+}
+
+.Home__Right {
+  margin-left: auto;
+  @include mobileP {
+    margin-left: 0;
+  }
+}
+
+.Home__Works {
+  margin-top: ratio(1);
+  @include mobileP {
+    margin-top: ratioM(8);
+  }
+}
+
+.Home__WorksTitle {
+  font-size: ratio(1.55);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  @include mobileP {
+    font-size: ratioM(1);
+  }
+}
+
+.Home__WorksList {
+  margin-top: ratio(1);
+  @include mobileP {
+    margin-top: 0;
+  }
+}
+
+.Home__WorksItem {
+  margin-top: ratio(0.5);
+  font-size: ratio(7.875);
+  @include mobileP {
+    margin-top: ratioM(1);
+    font-size: ratioM(4);
+  }
+}
+
+.Home__WorksItemLink {
+  @include linkOut($color: $pink, $height: ratio(0.4));
+  font-weight: 300;
+}
+
+.Home__Infos {
+  margin-top: ratio(8);
+  width: ratio(30);
+  line-height: 1.6;
+  @include mobileP {
+    margin-top: ratioM(8);
+    width: 100%;
+    font-size: ratioM(1.55);
+  }
+}
+
+.Home__Email {
+  display: inline-block;
+  margin-top: ratio(16);
+  margin-bottom: ratio(8);
+  font-size: ratio(7.875);
+  @include link($color: $violetBlue, $height: ratio(0.4));
+  @include mobileP {
+    margin-top: ratioM(8);
+    margin-bottom: ratioM(8);
+    line-height: ratioM(2.2);
+    font-size: ratioM(3);
+    text-decoration: underline;
+  }
+}

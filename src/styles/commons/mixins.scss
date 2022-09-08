@@ -1,0 +1,55 @@
+// Responsive
+@mixin mobileP {
+	@media (max-width: #{$tabletP}) and (orientation: portrait) {
+		@content;
+	}
+}
+
+@mixin link ($color: $violetBlue, $height: ratio(0.1)) {
+	text-decoration: none;
+	position: relative;
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: $height;
+		background-color: $color;
+		left: 0;
+		bottom: 0;
+		transition: transform 0.6s $easeInQuart;
+	}
+	&:before {
+		transform: scaleX(0);
+		transform-origin: right;
+		transition-delay: 0s;
+	}
+	&:after {
+		transform-origin: left;
+		transition-delay: 0.1s;
+	}
+	&:hover {
+		&:before {
+			transform: scaleX(1);
+			transition-delay: 0.1s;
+		}
+		&:after {
+			transform: scaleX(0);
+			transition-delay: 0s;
+		}
+	}
+	@include mobileP {
+		position: relative;
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+}
+
+@mixin linkOut($color: $violetBlue, $height: ratio(0.1)) {
+	@include link($color, $height);
+	&:after {
+		display: none;
+	}
+}
