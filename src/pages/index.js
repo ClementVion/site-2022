@@ -3,24 +3,28 @@ import '../styles/style.scss'
 
 const works = [
   {
-    name: 'Rouvenat',
-    url: 'https://rouvenat.com/'
-  },
-  {
     name: 'Tee Tran',
     url: 'https://teetran.com/'
+  },
+  {
+    name: 'Engineered Floors',
+    url: 'https://www.engineeredfloors.com/'
   },
   {
     name: 'True To Form',
     url: 'https://truetoform.design/'
   },
   {
+    name: 'Proof',
+    url: 'https://proof.io/'
+  },
+  {
     name: "Action Etrange",
     url: 'https://actionetrange.tv/'
   },
   {
-    name: 'Engineered Floors',
-    url: 'https://www.engineeredfloors.com/'
+    name: 'Rouvenat',
+    url: 'https://rouvenat.com/'
   },
   {
     name: 'Benjamin Briand',
