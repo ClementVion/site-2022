@@ -31,8 +31,10 @@
 
 .Home__Job {
   font-size: ratio(1.55);
+  margin-top: ratio(0.4);
   @include mobileP {
-    font-size: ratioM(1);
+    font-size: ratioM(1.2);
+    margin-top: ratioM(0.1);
   }
 }
 
