@@ -3,6 +3,10 @@ import '../styles/style.scss'
 
 const works = [
   {
+    name: 'The Tech Week',
+    url: 'https://thetechweek.com/'
+  },
+  {
     name: 'Rejouice',
     url: 'https://rejouice.com/'
   },
